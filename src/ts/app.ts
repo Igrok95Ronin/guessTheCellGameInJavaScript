@@ -9,7 +9,7 @@ let counter : number = 1;
 //Создаем таблицу
     function createTable(section : HTMLElement) {
         let resultRandom : number[] = getRandomInt(1,100)
-        console.log(resultRandom);
+        // console.log(resultRandom);
 
         const table = document.createElement('table') as HTMLTableElement;
         section.appendChild(table)
@@ -69,7 +69,6 @@ let counter : number = 1;
     function quantity() {
         count--
         counts.textContent = `${count}`
-        console.log(count);
         if(count == 0) {
             setTimeout(()=>{
                 alert("Выгрыш! Игра окончена")

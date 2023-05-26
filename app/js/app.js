@@ -4,7 +4,6 @@ window.addEventListener('DOMContentLoaded', function () {
     let counter = 1;
     function createTable(section) {
         let resultRandom = getRandomInt(1, 100);
-        console.log(resultRandom);
         const table = document.createElement('table');
         section.appendChild(table);
         for (let i = 1; i <= 10; i++) {
@@ -50,7 +49,6 @@ window.addEventListener('DOMContentLoaded', function () {
     function quantity() {
         count--;
         counts.textContent = `${count}`;
-        console.log(count);
         if (count == 0) {
             setTimeout(() => {
                 alert("Выгрыш! Игра окончена");
